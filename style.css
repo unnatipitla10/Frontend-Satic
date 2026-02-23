@@ -1,1 +1,95 @@
+/* ===== CSS Variables ===== */
+:root {
+    --primary-color: #6c63ff;
+    --bg-color: #f5f7ff;
+    --card-bg: #ffffff;
+    --text-color: #333;
+}
 
+/* ===== Global Styling ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, #6c63ff, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-weight: 400;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* ===== Main Section ===== */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* ===== Card Style ===== */
+.journey-card {
+    background: var(--card-bg);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.journey-card h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* ===== List Styling ===== */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f0f3ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    font-size: 0.9rem;
+}
